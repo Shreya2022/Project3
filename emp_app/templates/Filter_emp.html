@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtering Employee</title>
+</head>
+<form method="post" action="Filter_emp">
+    {% csrf_token %}
+    <div class="mb-3">
+      <label for="name" class="form-label">Name</label><br>
+      <input type="text" class="form-control" id="name" name="name" value="{{name}}">
+      
+    </div>
+    
+    <br>
+      <div class="mb-3">
+        <label for="role" class="form-label">Role</label><br>
+        <input type="text" class="form-control" id="role" name="role" value="{{role}}">
+      </div>
+      <br>
+      <div class="mb-3">
+        <label for="dept" class="form-label">Department</label><br>
+        <input type="text" class="form-control" id="role" name="dept" value="{{dept}}">
+      </div>
+
+      <br>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+<body>
+    
+</body>
+</html>
